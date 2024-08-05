@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: lightpink;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd; 
+    padding: 20px;
+    text-align: center;
+    width: 300px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+	transition: transform 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 139, 0.5);
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+     /* Smooth transition for hover effect */
+}
+
+.product:hover{
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #888;
+}
+
+.product a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: red;
+}
+.cart {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart th, .cart td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart th {
+    background-color: #f0f0f0;
+}
+
+.cart td {
+    vertical-align: middle;
+}
+
+.cart .total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.cart .total span {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.cart .total a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cart .total a:hover {
+    background-color: #0056b3;
+}
